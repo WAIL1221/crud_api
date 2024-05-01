@@ -32,7 +32,7 @@ services:
     image: nginx:alpine
     ports:
       - "80:80"
-      - "41.140.77.212:80:80"
+#      - "41.140.77.212:80:80" listens to your public ip address
       - "443:443"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
@@ -52,8 +52,8 @@ services:
       - "53:53/udp"
     volumes:
       - ./hosts:/etc/hosts-custom
-    command: --address=/enfant.innova.ma/105.159.77.27 --address=/www.enfant.innova.ma/105.159.77.27 --no-daemon
-
+#    command: --address=/enfant.innova.ma/ip_public --address=/www.enfant.innova.ma/ip_public --no-daemon
+#    "DNS for your public ip address"
   db:
     image: postgres:latest
     environment:
