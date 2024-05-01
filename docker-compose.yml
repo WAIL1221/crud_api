@@ -32,7 +32,7 @@ services:
     image: nginx:alpine
     ports:
       - "80:80"
-      - "105.159.77.27:80:80"
+      - "41.140.77.212:80:80"
       - "443:443"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
