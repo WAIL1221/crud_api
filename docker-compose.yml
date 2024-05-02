@@ -12,7 +12,7 @@ services:
     environment:
       - APP_NAME=Laravel
       - APP_ENV=local
-      - APP_KEY=base64:7g8BZpp36aIAa4NJogVlD3/YAO4lKI/pabeVl71eH34=
+      - APP_KEY=base64:VcB/Lc2o0S0OvoD5iNHybav7ZGH9wW1IHT04astngLk=
       - APP_DEBUG=true
       - APP_URL=http://localhost
       - DB_CONNECTION=pgsql
