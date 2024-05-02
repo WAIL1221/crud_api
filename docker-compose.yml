@@ -1,6 +1,7 @@
 version: '3.8'
 services:
   backend:
+    image: wailhadad1221/project_image:backend-latest
     build:
       context: ./api
       dockerfile: Dockerfile
@@ -29,6 +30,7 @@ services:
       - "8000:8000"
 
   frontend:
+    image: wailhadad1221/project_image:frontend-latest
     build:
       context: ./Frontend
       dockerfile: Dockerfile
